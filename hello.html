@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style src="style.css"></style>
+</head>
+<body>
+    
+    <div id="root">
+        <h1>Hello World!</h1>
+    </div>
+    <div id="root1">
+    </div>
+    Hello World!
+
+    <script>
+        const h1 = document.createElement('h1')
+        h1.innerHTML = 'Hello World!'
+        const style = document.createElement("style")
+        style.innerHTML = `
+        h1 {
+        color: green,
+        font: Helvetica
+        }
+        `
+        const root = document.getElementById("root1")
+        root.appendChild(h1)
+        document.head.appendChild(style)
+    </script>
+</body>
+</html>
